@@ -425,25 +425,34 @@ footer ul {
 
     nav {
         flex-direction: column;
+        justify-content: flex-start;
         height: 115px;
         margin-bottom: 30px;
+    }
+
+    nav img {
+        padding: 30px;
     }
 
     nav ul {
         height: 36px;
         width: 100%;
-        margin: 0 0 15px 0;
         padding: 0;
-        justify-content: space-between;
+        margin: 0;
         gap: 0;
     }
 
-    nav a {
+    nav li {
         width: 100%;
-        text-align: center;
-        padding-bottom: 15px;
-        padding-top: 0;
+    }
+
+    nav a {
+        height: 36px;
+        align-items: flex-start;
+        justify-content: center;
+        border-top: 0;
         border-bottom:  2px white solid;
+        font-size: 16px;
     }
 
     nav a:hover {
@@ -571,10 +580,14 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 30px;
+    gap: 50px;
 }
 
 footer section {
     padding: 0;
 }
 
+footer h3 {
+    margin: 0;
+}
 }
